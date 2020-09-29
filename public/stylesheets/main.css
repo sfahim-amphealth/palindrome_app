@@ -98,3 +98,8 @@ p {
 .result-fail{
   background-color: #e67642;
 }
+
+textarea {
+  margin:auto;
+  align-self: center;
+}
