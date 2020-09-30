@@ -16,7 +16,7 @@ class PalindromeAppTest < Minitest::Test
     post '/check', phrase: "Not a palindrome"
     assert_includes doc(last_response).at_css('p').content, "isn't a palindrome"
     assert doc(last_response).at_css('form')
-end
+  end
 
   def test_palindrome_submission
     post '/check', phrase: "Able was I, ere I saw Elba."
